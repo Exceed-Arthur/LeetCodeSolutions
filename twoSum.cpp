@@ -20,7 +20,6 @@ public:
                 }
             }
         }
-        
         for (int scanIndex=0; scanIndex < maxIndexFirst+1; scanIndex++) {
             if (nums[scanIndex]+nums[maxIndex] == target) {
                     finalVect.push_back(scanIndex); // Add scanned number index to solution pair
