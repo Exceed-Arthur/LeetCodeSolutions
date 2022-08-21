@@ -11,9 +11,9 @@ public:
         }
         cout << "max index is " << maxIndex << endl;
         for (int firstPassIndex=0; firstPassIndex < maxIndex; firstPassIndex++) { // Entry Loop
-            for (int compIndex = i; compIndex<maxIndex; compIndex++) { // Comparison Loop
-                if (nums[i] + nums[compIndex] == target) {
-                    finalVect.push_back(i); // Add first index to vector
+            for (int compIndex = firstPassIndex; compIndex<maxIndex; compIndex++) { // Comparison Loop
+                if (nums[firstPassIndex] + nums[compIndex] == target) {
+                    finalVect.push_back(firstPassIndex); // Add first index to vector
                     finalVect.push_back(compIndex); // Add second index to vector
                     return finalVect; // Exit and return early because solution is found
                 }
